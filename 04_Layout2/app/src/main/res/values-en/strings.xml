@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMICal</string>
+    <string name="name">Name : </string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="cal">BMI 계산</string>
+    <string name="heInput">Cm</string>
+    <string name="weInput">Kg</string>
+</resources>
