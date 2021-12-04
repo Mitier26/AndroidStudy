@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.105_MineSweeper02">
         <activity
+            android:name=".ConfirmRankActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert"
+            android:exported="false" />
+        <activity
+            android:name=".InputRankActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert"
+            android:exported="false" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

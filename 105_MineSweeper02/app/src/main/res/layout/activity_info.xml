@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#9CCC65"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="게임 방법"
+            android:textColor="#42A5F5"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#BC1A1A"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 네모 칸 안에 숨겨져 있는 모든 지뢰를 찾는 게임입니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 왼쪽 위에 찾아야 하는 지뢰의 숫자가 표시되어있습니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 오른쪽 위의 숫자는 경과 시간입니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. 가운데 노란것은 재시작 버튼 입니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. 지뢰가 있는 네모 칸을 선택하거나 시간이 260초가 지나면 패배합니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="지뢰 찾는 방법"
+                android:textColor="#29B6F6"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 처음에는 아무 칸이나 선택해야 합니다. ( 행운이 따르기를 )"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 숫자가 나타나면 숫자에 주의 해야 합니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 숫자는 숫자가 있는 주변 8방향 어딘가에 지뢰가 있다는 것입니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. 만약 숫자가 1 이면 8방향 안에 지뢰가 1개, 만약 숫자가 4 라면 숫자 주변 8방향에 지뢰가 4개 있다는 것입니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. 지뢰가 있다고 판단되는 네모칸에는 화면 아래있는 깃발을 만들어 지뢰가 있다는 것을 표시할 수 있습니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. 깃발을 선택한 후 네모 칸을 선택하면 깃발이 만들어집니다. 깃발이 있는 곳에 다시 깃발을 만들면 깃발이 사라집니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. 지뢰를 피해 모든 칸을 확인하면 게임에 승리합니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. 최대한 빠르게 지뢰를 찾아 최고의 자리를 차지하세요."
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
