@@ -249,15 +249,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 for(int i = 0; i < gridSize * gridSize; i++)
                 {
+                    gamestate = GAMESTATE.GAMEOVER;
                     if(cells.get(i).getMine() == true)
                     {
                         cells.get(i).setChecked(true);
-                        drawImage();
-                        Intent intent = new Intent(getApplicationContext(), InputRankActivity.class);
-                        intent.putExtra("time", time);
-                        startActivity(intent);
                     }
+
                 }
+                drawImage();
+                Intent intent = new Intent(getApplicationContext(), InputRankActivity.class);
+                intent.putExtra("time", time);
+                startActivity(intent);
             }
         });
 
@@ -282,7 +284,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.ranking:
-                // 랭킹을 보는 부분
+                Intent intent1 = new Intent(getApplicationContext(), ConfirmRankActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.quit:
                 finish();
@@ -520,7 +523,7 @@ public class MainActivity extends AppCompatActivity {
                     if(cells.get(i).getMine() == false)
                     {
                         winCount++;
-                        //Log.d("@@@@@@@@@@ WinCount", "" + winCount);
+                       // Log.d("@@@@@@@@@@ WinCount", "" + winCount);
                     }
 
                 }
