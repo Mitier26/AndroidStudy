@@ -31,11 +31,23 @@ public class ConfirmRankActivity extends AppCompatActivity {
         listView = findViewById(R.id.listview);
         exitButton = findViewById(R.id.button7);
 
-        ItemAdapter adapter1 = new ItemAdapter();
-        adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.list_item);
-        listView.setAdapter(adapter1);
-
+        //ItemAdapter adapter1 = new ItemAdapter(getApplicationContext());
+        //adapter1.setView(getApplicationContext());
+        adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.list_item2);
         pref = getSharedPreferences("pref",MODE_PRIVATE);
+        listView.setAdapter(adapter);
+        for(int i = 0; i < 10; i++)
+        {
+            String str = pref.getString("saveData"+i, "이름없음/999");
+            String[] str1 = str.split("/");
+            // 배열에 데이터를 넣는다.
+            //adapter1.addItem(new ListItem(i,str1[0],Integer.parseInt(str1[1])));
+            adapter.add("" + (i+1) + "\t\t\t" + str1[0] + "\t\t\t" + Integer.parseInt(str1[1]));
+        }
+
+
+
+
 
         // 저장되어 있는 값을 가지고 와서 대입 시켜야 한다.
 
@@ -46,53 +58,7 @@ public class ConfirmRankActivity extends AppCompatActivity {
             }
         });
 
-
-//        for(int i = 0 ; i < 10; i++)
-//        {
-//            String data =  pref.getString("saveData"+i,"이름없음/999");
-//        }
     }
 
-    class ItemAdapter extends BaseAdapter
-    {
-        ArrayList<ListItem> items = new ArrayList<ListItem>();
-
-        @Override
-        public int getCount() {
-            Log.d("@@@@@@@@@@@@" , ""+items.size());
-            return items.size();
-        }
-
-        @Override
-        public Object getItem(int i) {
-            return items.get(i);
-        }
-
-        @Override
-        public long getItemId(int i) {
-            return i;
-        }
-
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            ItemListView itemListView = null;
-            if(view == null)
-            {
-                itemListView = new ItemListView(getApplicationContext());
-            }
-            else
-            {
-                itemListView = (ItemListView)view;
-            }
-            ListItem item = items.get(i);
-            Log.d("@@@@@@@@@@@@" , ""+item.getTime());
-            itemListView.setRank(""+i);
-            itemListView.setName(item.getName());
-            itemListView.setScore(""+item.getTime());
-
-
-            return itemListView;
-        }
-    }
 
 }

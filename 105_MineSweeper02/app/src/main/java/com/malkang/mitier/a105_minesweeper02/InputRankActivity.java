@@ -31,6 +31,8 @@ public class InputRankActivity extends AppCompatActivity {
     SharedPreferences pref;
     SharedPreferences.Editor editor;
 
+    ItemAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,11 +53,13 @@ public class InputRankActivity extends AppCompatActivity {
         name = new ArrayList<String>();
         score = new ArrayList<Integer>();
 
+        //adapter = new ItemAdapter();
+
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // 이름을 입력 안했을 경우 기본값
-                if(inputNameText == null)
+                if(inputNameText.length() == 0)
                 {
                     userName = "이름없음";
                 }
@@ -85,17 +89,20 @@ public class InputRankActivity extends AppCompatActivity {
         int rankCount = pref.getInt("keyNum", 0);  // 기본값이 -1???
         // 저장을 할 때 +1을 하기 때문이다.
         // ?????
-
+        Log.d("@@@@@@@@@@@@@@@@@@", userName);
         // 10개 이하면 데이터를 저장한다.
         // 10개 보다 많으면 데이터를 비교해야 한다.
         if(rankCount < maxRank)
         {
             // 10 개 이하면 그냥 저장 하는데...
             // 그냥 저장해도 순서를 정해야 한다.
-            editor.putString("saveData"+(rankCount), userName +"/"+time);
+
+
+            editor.putString("saveData"+rankCount, userName +"/"+time);
             // 불러온 데이터에서 +1을 해야 다음것에 숫자가 저장이 된다.
             // 1 부터 저장을 할 것 인가? 0 부터 저장을 할 것인가?
             editor.putInt("keyNum", rankCount+1);
+            editor.commit();
             //rankCount++;  이것은 잘못된것이다. rankCount는 사라지는 것이다.
         }
         else
@@ -116,6 +123,7 @@ public class InputRankActivity extends AppCompatActivity {
 
                 // time 과 비교를 해야한다.
             }
+
             compareDate();
         }
     }
@@ -146,7 +154,9 @@ public class InputRankActivity extends AppCompatActivity {
     {
         for (int i = 0; i < maxRank; i++)
         {
-            editor.putString("saveData"+(i), name.get(i) +"/"+score.get(i));
+            //adapter.addItem(new ListItem(i, name.get(i), score.get(i)));
+            editor.putString("saveData"+i, name.get(i) +"/"+score.get(i));
         }
+        editor.commit();
     }
 }

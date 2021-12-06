@@ -85,6 +85,17 @@ public class MainActivity extends AppCompatActivity {
     };
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        if(gamestate == GAMESTATE.GAMEOVER)
+        {
+            startActivity(new Intent(MainActivity.this, MainActivity.class));
+            gamestate = GAMESTATE.PLAY;
+        }
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
