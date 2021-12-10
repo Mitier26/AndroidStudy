@@ -100,18 +100,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startButton = findViewById(R.id.imageButton);
-        normalButton = findViewById(R.id.imageButton2);
-        flagButton = findViewById(R.id.imageButton3);
-
-        mineText = findViewById(R.id.textView);
-        timeText = findViewById(R.id.textView2);
-
-        gridLayout = findViewById(R.id.gridlayout);
-        imageButtons = new ArrayList<ImageButton>();
-        cells = new ArrayList<Cell>();
-
-        cheatButton = findViewById(R.id.button);
+        initUi();
 
         handler.post(runnable);
 
@@ -119,9 +108,6 @@ public class MainActivity extends AppCompatActivity {
 
         //=======================================================
         // 해야할 것
-
-        // 14. 승리했을때 표현
-        // 16. 랭킹 저장
 
 
 
@@ -140,6 +126,12 @@ public class MainActivity extends AppCompatActivity {
         // 12. 숫자가 전부 열리면 게임 승리
         // 4. 게임 상태 ( 게임중, 게임오버, 게임승리)
         // 15. 치트
+        // 14. 승리했을때 표현
+        // 16. 랭킹 저장
+        // 17. 터치 오래하면 깃발 로 변경
+        // 18. 치트 게임 승리되는거 변경
+        // 19. 좌우 화면 비율 변경
+        // 20. 전부 찾으면 승리 하는것
 
         // 그림과 데이터 분리
         // 그림 : 버튼 숫자
@@ -151,80 +143,35 @@ public class MainActivity extends AppCompatActivity {
 
         drawImage();
 
+        setCellButton();
 
+        setUiButton();
 
-        // Tag를 버튼의 index로 사용한다.
-        for(int i = 0; i < gridLayout.getChildCount(); i++)
-        {
-            //imageButtons.get(i).setTag(i);
-            //Log.d("@@@@@@@@@@@@", ""+ imageButtons.get(i).getTag());
-            //Log.d("@@@@@@@@@@@@", "" + gridLayout.getChildAt(i).getTag());
-            //Log.d("@@@@@@@@@@@@@@@", "" + gridLayout.getChildAt(i).getId());
+    }
 
-            int index = i;
-            gridLayout.getChildAt(i).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("@@@@@@@@@@@@@@@@@", "" + cursorstate);
-                    // 자신을 선택했음으로 변경하고
-                    // 주변을 오픈? 폭탄은 오픈 하면 안됨.
+    public void initUi()
+    {
+        startButton = findViewById(R.id.imageButton);
+        normalButton = findViewById(R.id.imageButton2);
+        flagButton = findViewById(R.id.imageButton3);
 
-                    if(cursorstate == CURSORSTATE.NORMAL)
-                    {
-                        if(cells.get(index).getFlag() == true)
-                        {
+        mineText = findViewById(R.id.textView);
+        timeText = findViewById(R.id.textView2);
 
-                        }
-                        else if(cells.get(index).getCount() > 0 || cells.get(index).getMine() == true )
-                        {
-                            cells.get(index).setChecked(true);
-                            if(cells.get(index).getMine() == true)
-                            {
-                                gamestate = GAMESTATE.GAMEOVER;
-                                startButton.setImageResource(R.drawable.cry);
-                                allOpenCell();
-                            }
-                        }
-                        else
-                        {
-                            openAround(index);
-                        }
-                    }
-                    else if (cursorstate == CURSORSTATE.FLAG)
-                    {
-                        if(cells.get(index).getChecked() == false)
-                        {
-                            // cell 이 깃발이 아니면 깃발로 표시
-                            // cell 이 깃발이면 일반으로 표시
-                            if(cells.get(index).getFlag() == false)
-                            {
-                                cells.get(index).setFlag(true);
-                                mineCount--;
-                                mineText.setText(String.format("%03d", mineCount));
-                            }
-                            else if (cells.get(index).getFlag() == true)
-                            {
-                                cells.get(index).setFlag(false);
-                                mineCount++;
-                                mineText.setText(String.format("%03d", mineCount));
-                            }
+        gridLayout = findViewById(R.id.gridlayout);
+        imageButtons = new ArrayList<ImageButton>();
+        cells = new ArrayList<Cell>();
 
-                        }
-                    }
+        cheatButton = findViewById(R.id.button);
+    }
 
-                    winCheck();
-                    drawImage();
-                }
-            });
-        }
-
-
-
+    public void setUiButton()
+    {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-               startActivity(new Intent(MainActivity.this, MainActivity.class));
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
 
             }
         });
@@ -260,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 for(int i = 0; i < gridSize * gridSize; i++)
                 {
-                    gamestate = GAMESTATE.GAMEOVER;
+                    //gamestate = GAMESTATE.GAMEOVER;
                     if(cells.get(i).getMine() == true)
                     {
                         cells.get(i).setChecked(true);
@@ -268,14 +215,82 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 drawImage();
-                Intent intent = new Intent(getApplicationContext(), InputRankActivity.class);
-                intent.putExtra("time", time);
-                startActivity(intent);
+
             }
         });
-
     }
 
+    public void setCellButton()
+    {
+
+
+        // Tag를 버튼의 index로 사용한다.
+        for(int i = 0; i < gridLayout.getChildCount(); i++)
+        {
+            //imageButtons.get(i).setTag(i);
+            //Log.d("@@@@@@@@@@@@", ""+ imageButtons.get(i).getTag());
+            //Log.d("@@@@@@@@@@@@", "" + gridLayout.getChildAt(i).getTag());
+            //Log.d("@@@@@@@@@@@@@@@", "" + gridLayout.getChildAt(i).getId());
+
+            int index = i;
+            gridLayout.getChildAt(i).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("@@@@@@@@@@@@@@@@@", "" + cursorstate);
+                    // 자신을 선택했음으로 변경하고
+                    // 주변을 오픈? 폭탄은 오픈 하면 안됨.
+
+                    if(cells.get(index).getFlag() == true)
+                    {
+
+                    }
+                    else if(cells.get(index).getCount() > 0 || cells.get(index).getMine() == true )
+                    {
+                        cells.get(index).setChecked(true);
+                        if(cells.get(index).getMine() == true)
+                        {
+                            gamestate = GAMESTATE.GAMEOVER;
+                            startButton.setImageResource(R.drawable.cry);
+                            allOpenCell();
+                        }
+                    }
+                    else
+                    {
+                        openAround(index);
+                    }
+
+                    winCheck();
+                    drawImage();
+                }
+            });
+
+            gridLayout.getChildAt(i).setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+
+                    if(cells.get(index).getChecked() == false)
+                    {
+                        // cell 이 깃발이 아니면 깃발로 표시
+                        // cell 이 깃발이면 일반으로 표시
+                        if(cells.get(index).getFlag() == false)
+                        {
+                            cells.get(index).setFlag(true);
+                            mineCount--;
+                            mineText.setText(String.format("%03d", mineCount));
+                        }
+                        else if (cells.get(index).getFlag() == true)
+                        {
+                            cells.get(index).setFlag(false);
+                            mineCount++;
+                            mineText.setText(String.format("%03d", mineCount));
+                        }
+                    }
+                    drawImage();
+                    return true;
+                }
+            });
+        }
+    }
 
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -534,7 +549,7 @@ public class MainActivity extends AppCompatActivity {
                     if(cells.get(i).getMine() == false)
                     {
                         winCount++;
-                       // Log.d("@@@@@@@@@@ WinCount", "" + winCount);
+                        Log.d("@@@@@@@@@@ WinCount", "" + winCount);
                     }
 
                 }
@@ -542,8 +557,11 @@ public class MainActivity extends AppCompatActivity {
                 if(winCount >= maxCount)
                 {
                     gamestate = GAMESTATE.WIN;
-                    //Log.d("@@@@@@@@@@ Win", "승리해따" );
-                    // 랭킹 입력
+                    Log.d("@@@@@@@@@@ Win", "승리해따" );
+                    //랭킹 입력
+                    Intent intent = new Intent(getApplicationContext(), InputRankActivity.class);
+                    intent.putExtra("time", time);
+                    startActivity(intent);
                 }
             }
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C8C7C7"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -80,9 +81,10 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridlayout"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:background="@drawable/outline"
+        android:padding="3dp"
         app:columnCount="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,685 +92,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton90"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton91"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton92"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton93"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton94"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton95"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton96"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton97"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton98"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton99"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton100"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton101"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton102"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton103"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton104"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton105"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton106"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton107"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton73"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton5"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton6"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton7"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton8"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton9"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton10"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton11"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton12"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton13"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton14"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton15"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton16"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton17"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton18"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton19"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton20"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
             android:id="@+id/imageButton21"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton22"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton23"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton24"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton25"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton26"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton27"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton28"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton29"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton30"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton31"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton32"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton33"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton34"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton35"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton36"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton37"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton38"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton39"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton40"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton41"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton42"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton43"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton44"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton45"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton46"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton47"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton48"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton49"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton50"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton51"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton52"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton53"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton54"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton55"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton56"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton57"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton58"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton59"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton60"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton61"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
@@ -776,134 +103,17 @@
         <ImageButton
             android:id="@+id/imageButton62"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
 
         <ImageButton
-            android:id="@+id/imageButton63"
+            android:id="@+id/imageButton106"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton64"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton65"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton66"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton67"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton68"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton69"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton70"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton71"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton72"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton74"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton75"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton76"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="-5dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/minesweeper_5" />
-
-        <ImageButton
-            android:id="@+id/imageButton77"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
@@ -911,53 +121,188 @@
         <ImageButton
             android:id="@+id/imageButton78"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
 
         <ImageButton
-            android:id="@+id/imageButton79"
+            android:id="@+id/imageButton32"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
 
         <ImageButton
-            android:id="@+id/imageButton80"
+            android:id="@+id/imageButton39"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
 
         <ImageButton
-            android:id="@+id/imageButton81"
+            android:id="@+id/imageButton46"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
 
         <ImageButton
-            android:id="@+id/imageButton82"
+            android:id="@+id/imageButton76"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
 
         <ImageButton
-            android:id="@+id/imageButton83"
+            android:id="@+id/imageButton59"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton52"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton20"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton30"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton91"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton42"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton77"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton107"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton99"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton22"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton31"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton54"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton65"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton66"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
@@ -965,8 +310,575 @@
         <ImageButton
             android:id="@+id/imageButton84"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton92"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton45"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton49"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton61"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton18"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton95"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton90"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton43"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton82"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton94"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton75"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton68"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton97"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton33"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton60"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton36"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton73"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton64"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton81"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton25"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton55"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton102"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton58"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton24"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton38"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton83"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton29"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton53"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton69"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton100"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton80"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton96"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton50"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton79"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton101"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton105"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton35"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton74"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton98"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton17"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton70"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton48"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton41"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton56"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton34"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton63"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton72"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton28"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton104"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton93"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton26"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton51"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton71"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton15"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton14"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
@@ -974,8 +886,8 @@
         <ImageButton
             android:id="@+id/imageButton85"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />
@@ -983,8 +895,98 @@
         <ImageButton
             android:id="@+id/imageButton86"
             style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton37"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton44"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton57"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton40"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton47"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton23"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton67"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton27"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="-5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/minesweeper_5" />
+
+        <ImageButton
+            android:id="@+id/imageButton103"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             android:layout_margin="-5dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/minesweeper_5" />

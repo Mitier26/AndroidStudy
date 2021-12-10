@@ -62,12 +62,16 @@ public class MainActivity extends AppCompatActivity {
         // 중간에 k 가 들어 가는 것으로 찾아줘 k%, %k, 해당 문자로 검색 하는 기능
         String selection = ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " like '%'";
 
-        String[] selectionArgs = null;  // 조건에 대한 값을 변수 처리할 경우
+        // 조건에 대한 값을 변수 처리할 경우
+        String[] selectionArgs = null;
+
         // 이름순을 오름차순으로 보여줘 desc : 내림 차순
         String sortOrder = ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " asc";
 
         // 조건으로 데이터를 찾는다, query : 질문
+        // 커서의 형태로 돌려줌, 한줄 씩 돌려준다.
         Cursor cursor =  contentResolver.query(uri, projection, selection, selectionArgs, sortOrder);
+        //Cursor cursor =  contentResolver.query(uri, projection, selection, new String[]{"Android"}, sortOrder);
 
         while(cursor.moveToNext())
         {
@@ -85,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         return data;
     }
 
+    // SMS를 보여주는 기능
     ArrayList<String> getContacts2()
     {
         ArrayList<String> data = new ArrayList<String>();
@@ -93,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
 
         String[] projection = null;
         // body 컬럼의 이름
-        String selection = "body like '%삼성카드%";
+        String selection = null;
+        //String selection = "body like '%삼성카드%";
         String[] selectionArgs = null;
         // 날짜를 보여줘
         String sortOrder = "date desc";
