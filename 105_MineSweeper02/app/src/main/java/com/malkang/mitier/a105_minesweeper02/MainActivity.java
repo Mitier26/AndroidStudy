@@ -89,7 +89,18 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         if(gamestate == GAMESTATE.GAMEOVER)
         {
-            startActivity(new Intent(MainActivity.this, MainActivity.class));
+//            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+//            intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
+//            startActivity(intent);
+//            finishAffinity();
+            gameStart();
+
+            drawImage();
+
+            setCellButton();
+
+            setUiButton();
             gamestate = GAMESTATE.PLAY;
         }
 
@@ -108,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         //=======================================================
         // 해야할 것
-
+        // 21. 엑티비티 재활용
 
 
        //=======================================================
@@ -256,6 +267,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else
                     {
+                        cells.get(index).setChecked(true);
                         openAround(index);
                     }
 
