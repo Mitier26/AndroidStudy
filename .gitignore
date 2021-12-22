@@ -9,7 +9,9 @@
 *.apk
 *.ap_
 *.aab
+src/
 jdks/
+caches/
 
 # Files for the ART/Dalvik VM
 *.dex
