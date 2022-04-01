@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projects/ANDROID/33_remotecontrolcar/app/src/main/res/drawable/backward_selector.xml" value="0.27395833333333336" />
+        <entry key="..\:/Projects/ANDROID/33_remotecontrolcar/app/src/main/res/layout/activity_device_lise.xml" value="0.33177083333333335" />
         <entry key="..\:/Projects/ANDROID/33_remotecontrolcar/app/src/main/res/layout/activity_device_list.xml" value="0.2578125" />
         <entry key="..\:/Projects/ANDROID/33_remotecontrolcar/app/src/main/res/layout/activity_main.xml" value="0.27239583333333334" />
+        <entry key="..\:/Projects/ANDROID/33_remotecontrolcar/app/src/main/res/layout/device_name.xml" value="0.33177083333333335" />
       </map>
     </option>
   </component>
